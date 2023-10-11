@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { JwtDecoderRkComponent } from './jwt-decoder-rk.component';
+import { JwtDecoderRk } from './jwt-decoder-rk.component';
 
-describe('JwtDecoderRkComponent', () => {
-  let component: JwtDecoderRkComponent;
-  let fixture: ComponentFixture<JwtDecoderRkComponent>;
+describe('JwtDecoderRk', () => {
+  let component: JwtDecoderRk;
+  let fixture: ComponentFixture<JwtDecoderRk>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [JwtDecoderRkComponent]
+      declarations: [JwtDecoderRk]
     });
-    fixture = TestBed.createComponent(JwtDecoderRkComponent);
+    fixture = TestBed.createComponent(JwtDecoderRk);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

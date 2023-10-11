@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
-import { JwtDecoderRkComponent } from './jwt-decoder-rk.component';
+import { JwtDecoderRk } from './jwt-decoder-rk.component';
 
 
 
 @NgModule({
   declarations: [
-    JwtDecoderRkComponent
+    JwtDecoderRk
   ],
   imports: [
   ],
   exports: [
-    JwtDecoderRkComponent
+    JwtDecoderRk
   ]
 })
 export class JwtDecoderRkModule { }

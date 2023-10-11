@@ -7,8 +7,8 @@ import { Token } from '../models/token';
   template: ` <p>jwt-decoder-rk works!</p> `,
   styles: [],
 })
-export class JwtDecoderRkComponent implements Token {
-  decode = (token: string) =>
+export class JwtDecoderRk implements Token {
+ private decode = (token: string) =>
     decodeURIComponent(
       atob(token.split('.')[1].replace('-', '+').replace('_', '/'))
         .split('')
@@ -16,7 +16,7 @@ export class JwtDecoderRkComponent implements Token {
         .join('')
     );
 
-  decodeToken(token: string) {
+ public decodeToken(token: string) {
     return token ? this.decode(token) : new Error('Token not valid');
   }
 }
