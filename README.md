@@ -1,24 +1,26 @@
 # JwtDecoderRk
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+The library `jwt-decoder-rk` can be used to decode jwt tokens.
 
-## Code scaffolding
+## How to use jwt-decoder-rk
 
-Run `ng generate component component-name --project jwt-decoder-rk` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project jwt-decoder-rk`.
-> Note: Don't forget to add `--project jwt-decoder-rk` or else it will be added to the default project in your `angular.json` file. 
+## Installation
 
-## Build
+Install the library in your project using the following command
 
-Run `ng build jwt-decoder-rk` to build the project. The build artifacts will be stored in the `dist/` directory.
+> npm i jwt-decoder-rk --save
 
-## Publishing
+## Import
 
-After building your library with `ng build jwt-decoder-rk`, go to the dist folder `cd dist/jwt-decoder-rk` and run `npm publish`.
+Add `JwtDecoderRkComponent` in your app module in providers array
 
-## Running unit tests
+## Usage
 
-Run `ng test jwt-decoder-rk` to execute the unit tests via [Karma](https://karma-runner.github.io).
+in your service or component
+`constructor(private jwt: JwtDecoderRkComponent) { }`, then call decode `jwt.decode(token)`
+decode returns jwt token data
 
-## Further help
+## Open source
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Be a contributor !!
